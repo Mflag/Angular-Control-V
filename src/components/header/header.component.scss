@@ -1,0 +1,113 @@
+main{
+    width: 90%;
+    align-items: center;
+    margin: auto;
+}
+body{
+   
+font-family: 'Oswald', sans-serif;
+}
+
+/* Header*/
+.header{   
+    text-align: center;  
+    margin:  25px auto; 
+    background-color: #f26666;
+    padding: 25px;
+    align-items:flex-end;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+::placeholder{
+    color: black;
+}
+.logo{
+    width: 20rem;
+    position:absolute ;
+    transform: translateX(-50%);
+    left: 50%;
+    z-index: 999;
+    top: 0px;
+   
+}
+
+.contacto{
+    list-style: none;
+    margin: auto;
+}
+.contacto a i{
+    color: white;
+    padding-top: 20px;
+    width: 20%;
+    font-size: 1.5rem;
+    
+}
+
+.estilo{
+width: 100%;
+  
+    
+}
+/*Navegacion*/
+
+.navbar{
+   background-color: #32736E;
+   font-family: 'Oswald', sans-serif;
+   font-size: 2rem;
+   margin: auto;
+   border-bottom: 3px solid white;
+   border-top: 3px solid white;
+}
+.navegacion{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+.submenu{
+    position: absolute;
+    list-style: none;
+    text-decoration: none;
+    display: none;
+    padding: 10px;
+    background: #32736E;
+}
+.menu:hover .submenu{
+    display: block;
+}
+
+
+nav ul li a {
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    text-align: center;
+}
+.buscador div{
+    position: relative;
+    font-size: 1.5rem;
+    
+}
+.buscador input{
+    border: 0;
+    background-color: white;
+    border-radius: 5px;
+    outline: 0;
+    opacity: 0.3;
+        
+    
+}
+.boton{
+    color: white;
+    position: absolute;
+    right: 10px;
+    font-size: 1.5rem;
+}
+.buscador label{
+    position: absolute;
+    top:2px;
+    left: 10px;
+    color: white;
+
+}
