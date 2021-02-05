@@ -1,0 +1,33 @@
+body{
+    width: 90%;
+    margin: auto;
+    background-image:url("../../assets/img/Fondo.jpg") ;
+    font-family: 'Oswald', sans-serif;
+}
+h2{
+    text-decoration:underline ;
+    color: white;
+}
+.categorias{
+    margin: 2rem auto ;
+    text-align: center;
+}
+.categorias ul , button{
+    list-style: none;
+    color: white;
+    text-align: left;
+    background: none;
+    border: 0;
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+   
+}
+li :hover{
+    
+    background: scroll;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+
+
