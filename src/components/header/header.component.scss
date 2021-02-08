@@ -2,18 +2,19 @@ main{
     width: 90%;
     align-items: center;
     margin: auto;
+    
 }
 body{
-   
-font-family: 'Oswald', sans-serif;
+  
+    font-family: 'Oswald', sans-serif;
 }
 
 /* Header*/
 .header{   
     text-align: center;  
-    margin:  25px auto; 
+    margin-top: 25px;
     background-color: #f26666;
-    padding: 25px;
+    height:10rem ;
     align-items:flex-end;
     display: flex;
     margin-bottom: 0px;
@@ -36,11 +37,13 @@ font-family: 'Oswald', sans-serif;
     list-style: none;
     margin: auto;
 }
-.contacto a i{
+.contacto a,i{
     color: white;
     padding-top: 20px;
     width: 20%;
     font-size: 1.5rem;
+    display: flex;
+    text-decoration: none;
     
 }
 
@@ -84,30 +87,49 @@ nav ul li a {
     align-items: center;
     text-align: center;
 }
-.buscador div{
+
+
+
+
+.usuario{
+    height: 100%;
     position: relative;
+}
+.login{
+    position:absolute;
+    color: white;
+    right: 4rem;
+    top: 0.5rem;
+    display: flex;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+    padding-left: 1rem;
+    width: 100%;
+}
+.buscador{
+  
     font-size: 1.5rem;
     
 }
 .buscador input{
+    position: absolute;
     border: 0;
     background-color: white;
     border-radius: 5px;
     outline: 0;
     opacity: 0.3;
-        
+    right: 0.5rem;
+    bottom: 0.5rem;
     
 }
-.boton{
+.boton i{
     color: white;
     position: absolute;
-    right: 10px;
+    right: 2.5rem;
+    bottom: 0.8rem;
     font-size: 1.5rem;
 }
-.buscador label{
-    position: absolute;
-    top:2px;
-    left: 10px;
-    color: white;
 
-}
+
