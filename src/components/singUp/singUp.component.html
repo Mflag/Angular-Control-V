@@ -1,7 +1,25 @@
-<form (submit)="singUp()">
-    <input type="text" [(ngModel)]="user.email" name="email">
+<body>
     
-    <input type="password" [(ngModel)]="user.password" name="password">
+<div class="row ">
     
-    <button type="submit"></button>
-    </form>
+        <div class="login">
+            
+            
+                <form (submit)="singUp()">
+                    <div class="email">
+                        <label for="email">Email</label>
+                        <input type="text" [(ngModel)]="user.email" name="email" class="form-control"  required autofocus>
+                    </div>
+                    <div class="password">
+                        <label for="password">Contraseña</label>
+                        <input type="password" [(ngModel)]="user.password" name="password" class="form-control"  required>
+                    </div>
+                    <button >
+                        Registrarme
+                    </button>
+                </form>
+            
+        </div>
+    
+</div>
+</body>

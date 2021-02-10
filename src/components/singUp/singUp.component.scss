@@ -1,0 +1,29 @@
+body{
+    width: 90%;
+    margin: auto;
+    background-image:url("../../assets/img/Fondo.jpg") ;
+    font-family: 'Oswald', sans-serif;
+}
+.login{
+    width:50%;
+    padding:2rem ;
+    margin:6rem auto;
+    background-color:#f26666 ;
+    border-radius: 25px;
+    border: solid 5px white;
+    color: white;
+}
+.login input{
+    background: transparent;
+    border: solid 3px white;
+    border-radius: 25px;
+    
+}
+
+
+.password{
+    margin-top: 2rem;
+}
+button{
+    text-align: center;
+}

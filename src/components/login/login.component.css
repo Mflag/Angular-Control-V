@@ -1,0 +1,58 @@
+body{
+    width: 90%;
+    margin: auto;
+    background-image:url("../../assets/img/Fondo.jpg") ;
+    font-family: 'Oswald', sans-serif;
+}
+form{
+    text-align: center;
+}
+.login{
+    width:50%;
+    padding:2rem ;
+    margin:6rem auto;
+    background-color:#dd7272 ;
+    border-radius: 25px;
+    border: solid 5px white;
+    color: white;
+}
+.fondo{
+    border: solid 2px white;
+    border-radius: 25px;
+}
+.login input{
+    border-radius: 25px;
+    opacity: 0.3;
+}
+
+.password{
+    margin-top: 2rem;
+}
+button{
+    margin:2rem auto;
+
+}
+.email, .password{
+    text-align: left;
+}
+label{
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+button{
+    border: none;
+    background-color: #eb5353;
+    color: white;
+    font-size: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+}
+.olvido{
+    color: white;
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
