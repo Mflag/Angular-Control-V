@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./singUp.component.scss']
 })
 export class SingUpComponent implements OnInit {
+ user={
+   email:'',
+   password:'' 
+ }
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  singUp(){
+    console.log(this.user)
+  }
+
 
 }
