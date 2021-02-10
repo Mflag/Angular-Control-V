@@ -8,22 +8,31 @@ body{
     width:50%;
     padding:2rem ;
     margin:6rem auto;
-    background-color:#f26666 ;
+    background-color:#84aba7;
     border-radius: 25px;
     border: solid 5px white;
     color: white;
 }
 .login input{
-    background: transparent;
+    opacity: 0.9;
     border: solid 3px white;
     border-radius: 25px;
+    background-color: #91adab;
     
 }
 
 
-.password{
-    margin-top: 2rem;
+.password, .nombre, .email, .telefono, .confirmacion{
+    margin-bottom: 1rem;
+}
+.boton{
+    text-align: center;
 }
 button{
-    text-align: center;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color:#4ab1a6 ;
 }
