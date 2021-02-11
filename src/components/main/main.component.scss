@@ -1,0 +1,50 @@
+body{
+    width: 90%;
+    margin: auto;
+    background-image:url("../../assets/img/Fondo.jpg") ;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 4rem; 
+    padding-bottom: 4rem;
+    color: white;
+}
+.linea{
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    width: 100%;
+}
+.contenedor{
+    text-align: center;
+    width: 100%;    
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+.fondo{
+    background-color: #cfa9a9;
+    border-bottom: 5px solid white;
+    border-top: 5px solid white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 2rem;
+}
+p{
+    text-decoration: underline;
+    text-align: center;
+    font-size: 2.5rem;
+}
+li{
+    list-style: none;
+    text-align: left;
+    font-size: 2rem;
+
+    
+}
+.tamaño{
+    text-align: center;
+}
+.lista{
+    display: flex;
+    padding-left: 4rem;
+    width: 100%;
+}

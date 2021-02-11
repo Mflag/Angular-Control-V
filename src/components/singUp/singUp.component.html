@@ -8,12 +8,12 @@
                 <form (submit)="singUp()">
                     <div class="nombre">
                         <label for="">Nombre</label>
-                        <input type="text" class="form-control" >
+                        <input type="text" class="form-control" autofocus>
                     </div>
 
                     <div class="email">
                         <label for="email">Email</label>
-                        <input type="text" [(ngModel)]="user.email" name="email" class="form-control"  required autofocus>
+                        <input type="text" [(ngModel)]="user.email" name="email" class="form-control"  required >
                     </div>
 
                     <div class="telefono">
