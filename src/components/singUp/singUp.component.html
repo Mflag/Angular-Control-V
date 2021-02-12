@@ -8,7 +8,7 @@
                 <form (submit)="singUp()">
                     <div class="nombre">
                         <label for="">Nombre</label>
-                        <input type="text" class="form-control" autofocus>
+                        <input type="text" [(ngModel)]="user.nombre" class="form-control" name="nombre" required autofocus>
                     </div>
 
                     <div class="email">
@@ -18,7 +18,7 @@
 
                     <div class="telefono">
                         <label for="">Telefono (Opcional)</label>
-                        <input type="text" class="form-control">
+                        <input type="text" [(ngModel)]="user.telefono" class="form-control" name="telefono">
                     </div>  
 
                     <div class="password">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="confirmacion">
                         <label for="">Confirmar Contraseña</label>
-                        <input type="text" class="form-control">
+                        <input type="password" [(ngModel)]="user.confirmacion" class="form-control" name="confirmacion" required>
                     </div>    
                     <div class="boton">
                     <button >
