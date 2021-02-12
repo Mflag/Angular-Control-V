@@ -6,6 +6,15 @@ import { HttpClient } from '@angular/common/http'
 })
 export class AuthService {
 
-constructor() { }
+  private URL = 'http:/localhost:3000/api';
+
+constructor(private http: HttpClient) { }
+
+singUp(user: any) {
+
+  return this.http.post<any>(this.URL + '/singUp', user)
+
+
+}
 
 }
