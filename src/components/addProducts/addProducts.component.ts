@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { StickerServiceService } from '../../services/stickerService.service'
 
 @Component({
   selector: 'app-addProducts',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProductsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private stickerService: StickerServiceService) { }
 
   ngOnInit() {
+  }
+  create(){
+    
   }
 
 }

@@ -100,13 +100,14 @@ nav ul li a {
     color: white;
     right: 4rem;
     top: 0.5rem;
-    display: flex;
+    line-height: 2rem;
+    overflow: hidden;
 }
 .login a{
     text-decoration: none;
     color: white;
     padding-left: 1rem;
-    width: 100%;
+    
 }
 .buscador{
   

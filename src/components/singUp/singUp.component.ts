@@ -21,10 +21,11 @@ export class SingUpComponent implements OnInit {
   }
 
   singUp(){
-    this. authService.singUp(this.user)
+    this.authService.singUp(this.user)
       .subscribe(
         res =>{
-          console.log(res)
+          console.log(res);
+          localStorage.setItem('token', res.token)
         },
         err => console.log(err)
       )
