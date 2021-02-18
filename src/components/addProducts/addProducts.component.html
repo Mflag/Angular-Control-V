@@ -18,18 +18,18 @@
         <div class="creacion container-fluid ">   
             <div class="row">
                 <div class="col-md-3 my-4">
-                    <form id="sticker-form" class="card card-body border-light">
+                    <form id="sticker-form" class="card card-body border-light" [formGroup]="formGroup" (submit)="create()">
                         <div class="form-group">
-                            <input type="text" id="name" placeholder="Nombre" class="form-control">
+                            <input type="text" id="name" placeholder="Nombre" class="form-control" formControlName="name" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="size" placeholder="Tamaño" class="form-control">
+                            <input type="text" id="size" placeholder="Tamaño" class="form-control" formControlName="size" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="price" placeholder="Precio" class="form-control">
+                            <input type="text" id="cod" placeholder="Codigo" class="form-control" formControlName="cod" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="seccion" placeholder="Seccion" class="form-control">
+                            <input type="text" id="seccion" placeholder="Seccion" class="form-control" formControlName="seccion" required>
                         </div>
                         <div class="input-group mb-3">
                             <div class="custom-file">
