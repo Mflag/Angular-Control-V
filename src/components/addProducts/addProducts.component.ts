@@ -9,24 +9,24 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
 })
 export class AddProductsComponent implements OnInit {
 
+  public sticker!: {};
   
   formGroup = new FormGroup({
   name: new FormControl('', Validators.required),
-  size: new FormControl('', Validators.required),
   cod: new FormControl('', Validators.required),
-  seccion: new FormControl('', Validators.required)
+  seccion: new FormControl('', Validators.required),
+  imagen: new FormControl('', Validators.required)
   
   });
   
    
 
-  constructor(private stickerService: StickerServiceService/*,
-              private formBuilder: FormBuilder,*/
-              
-              ) { }
+  constructor(private stickerService: StickerServiceService) { }
 
-  ngOnInit() {/*this.formGroup = this.formBuilder.group({name: ['', Validators.required], size:['', Validators.required], cod:['', Validators.required], seccion: ['', Validators.required]     })
-  */}
+  ngOnInit() {
+    this.stickerService.stickerGet().subscribe(data =>this.sticker = data);
+    console.log(this.sticker)
+  }
   create(){
     this.stickerService.stickerPost(this.formGroup.value)
     .subscribe(
@@ -36,5 +36,7 @@ export class AddProductsComponent implements OnInit {
       err => console.log(this.formGroup)
     )
   }
+
+ 
 
 }

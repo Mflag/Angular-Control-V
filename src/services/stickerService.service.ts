@@ -10,11 +10,12 @@ export class StickerServiceService
 {
   private URI = 'http://localhost:3000/api/sticker';
 
-  constructor(private http: HttpClient, private router: Router) { }
+  constructor(private http: HttpClient, 
+              private router: Router) { }
 
-  stickerGet(sticker: any) {
+stickerGet() {
 
-  return this.http.get<any>(this.URI, sticker);
+  return this.http.get(this.URI);
 
   }
   
